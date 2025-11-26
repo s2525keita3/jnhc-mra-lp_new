@@ -113,7 +113,7 @@ const Header = () => {
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
-        <div className={`text-sm md:text-base font-bold leading-tight ${isScrolled ? 'text-text-primary' : 'text-white'} transition-colors`}>
+        <div className="text-sm md:text-base font-bold leading-tight text-text-primary transition-colors">
           一般社団法人<br className="md:hidden" /> 全国訪問看護経営研究協会
         </div>
         <div className="hidden md:block">
@@ -267,8 +267,7 @@ const TimelineItem = ({ step, label, amount, total, isLeft }: { step: string, la
 
         {/* Center Line & Dot */}
         <div className="absolute left-6 md:left-1/2 w-0.5 h-full bg-baum-200 transform md:-translate-x-1/2 -z-10"></div>
-        <div className="absolute left-6 md:left-1/2 w-8 h-8 bg-white rounded-full border-2 border-baum-500 shadow-[0_0_10px_rgba(255,107,0,0.6)] transform -translate-x-1/2 top-8 z-10 group-hover:scale-110 transition duration-300 flex items-center justify-center text-[10px] font-bold text-baum-500">
-            {step}
+        <div className="absolute left-6 md:left-1/2 w-8 h-8 bg-white rounded-full border-2 border-baum-500 shadow-[0_0_10px_rgba(255,107,0,0.6)] transform -translate-x-1/2 top-8 z-10 group-hover:scale-110 transition duration-300">
         </div>
         
         {/* Content Box */}
@@ -745,8 +744,8 @@ const Profile = () => {
              {/* Vertical Rectangle Photo */}
              <div className="h-full w-full relative min-h-[400px]">
                 <img 
-                  src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                  alt="Representative Director" 
+                  src="/teacher_john.JPG" 
+                  alt="代表理事 渋谷慶太" 
                   className="w-full h-full object-cover absolute inset-0"
                 />
                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6 text-white md:hidden">
