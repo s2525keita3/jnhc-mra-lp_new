@@ -39,13 +39,13 @@ function App() {
           <ValueStack />
         </Suspense>
         <Suspense fallback={<div className="h-96" />}>
+          <Pricing />
+        </Suspense>
+        <Suspense fallback={<div className="h-96" />}>
           <Testimonials />
         </Suspense>
         <Suspense fallback={<div className="h-96" />}>
           <Profile />
-        </Suspense>
-        <Suspense fallback={<div className="h-96" />}>
-          <Pricing />
         </Suspense>
         <Suspense fallback={<div className="h-96" />}>
           <FAQ />
