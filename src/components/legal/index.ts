@@ -1,0 +1,2 @@
+export { LegalDocuments } from './LegalDocuments';
+
