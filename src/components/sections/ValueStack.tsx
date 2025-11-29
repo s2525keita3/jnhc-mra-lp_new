@@ -1,6 +1,5 @@
 // React / Library imports
 import { useMemo } from 'react';
-import { CheckCircle } from 'lucide-react';
 import { pricingData } from '@/content';
 
 export const ValueStack = () => {

@@ -29,7 +29,7 @@ export const problemData = {
     ],
     costSummary: {
       label: "月額会費:",
-      amount: "月額10,000円で全て込み"
+      amount: "月額11,000円（税込）で全て込み"
     }
   }
 };

@@ -1,6 +1,6 @@
 // React / Library imports
-import { CheckCircle, Star, X } from 'lucide-react';
 import { useMemo } from 'react';
+import { CheckCircle, Star, X } from 'lucide-react';
 import { problemData } from '@/content';
 
 export const Problem = () => {

@@ -64,17 +64,12 @@ export const pricingData = {
   ],
   specialOffers: [
     {
-      name: "初月50%OFF",
-      description: "7日間限定",
-      price: 5000
-    },
-    {
-      name: "30日間返金保証",
-      description: "理由不問・全額返金"
-    },
-    {
       name: "過去アーカイブ48本・即視聴権",
       description: "入会即日から視聴可能"
+    },
+    {
+      name: "3-6ヶ月の伴走サポート",
+      description: "PDCAを回して結果を出す"
     }
   ],
   comparison: {

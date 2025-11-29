@@ -1,6 +1,6 @@
 // React / Library imports
 import { useMemo } from 'react';
-import { CheckCircle, CreditCard, Lock } from 'lucide-react';
+import { CheckCircle, CreditCard, Lock, Mail } from 'lucide-react';
 
 // Constants / Config
 import { STRIPE_CHECKOUT_URL } from '@/shared/constants';
@@ -8,6 +8,7 @@ import { pricingData } from '@/content';
 
 // Components
 import { RichCtaButton } from '@/components/ui/RichCtaButton';
+import { UsageFlow } from '@/components/sections/UsageFlow';
 
 export const Pricing = () => {
   const features = useMemo(() => pricingData.features, []);
@@ -15,8 +16,12 @@ export const Pricing = () => {
   const specialOffers = useMemo(() => pricingData.specialOffers, []);
 
   return (
-    <section id="apply" className="py-20 gradient-bg relative">
-      <div className="max-w-4xl mx-auto px-4 relative z-10">
+    <section id="apply" className="gradient-bg relative">
+      {/* Usage Flow Section */}
+      <UsageFlow />
+      
+      <div className="py-20">
+        <div className="max-w-4xl mx-auto px-4 relative z-10">
         
         {/* Rich Design Card */}
         <div className="bg-white rounded-xl shadow-card-hover overflow-hidden border-4 border-baum-500 relative hover-lift animate-fade-up">
@@ -39,7 +44,7 @@ export const Pricing = () => {
                   {pricingData.valueStack.totalValue.toLocaleString()}円相当
                 </p>
                 <p className="text-sm text-baum-500 font-bold mt-1">
-                  → 月額{pricingData.monthlyPrice.toLocaleString()}円
+                  → 月額{pricingData.monthlyPriceWithTax.toLocaleString()}円（税込）
                 </p>
               </div>
               
@@ -55,7 +60,7 @@ export const Pricing = () => {
               {/* Bonuses - Updated */}
               <div className="bg-bg-orange-light p-5 rounded-xl border border-baum-100">
                 <p className="text-baum-500 font-bold text-sm mb-3 flex items-center">
-                  <span className="mr-1">🎁</span> 今だけの入会特典（7日間限定）
+                  <span className="mr-1">🎁</span> 入会特典
                 </p>
                 <div className="space-y-2">
                   {bonuses.map((bonus, i) => (
@@ -85,12 +90,12 @@ export const Pricing = () => {
 
             {/* Right: Price & CTA */}
             <div className="md:col-span-2 bg-bg-cream p-8 md:p-10 flex flex-col justify-center items-center border-t md:border-t-0 md:border-l border-baum-100">
-              <p className="text-text-tertiary text-xs font-bold mb-2">月額会費 (税別)</p>
+              <p className="text-text-tertiary text-xs font-bold mb-2">月額会費 (税込)</p>
               <div className="flex items-end text-text-primary mb-1">
-                <span className="text-5xl md:text-6xl font-bold tracking-tighter">{pricingData.monthlyPrice.toLocaleString()}</span>
+                <span className="text-5xl md:text-6xl font-bold tracking-tighter">{pricingData.monthlyPriceWithTax.toLocaleString()}</span>
                 <span className="text-xl font-bold mb-3 ml-1">円</span>
               </div>
-              <p className="text-xs text-text-tertiary mb-1">年払い: {pricingData.yearlyPrice.toLocaleString()}円（税別）</p>
+              <p className="text-xs text-text-tertiary mb-1">年払い: {pricingData.yearlyPriceWithTax.toLocaleString()}円（税込）</p>
               <p className="text-xs text-text-light mb-6 line-through">通常コンサル 30万円〜</p>
               
               <RichCtaButton 
@@ -99,6 +104,18 @@ export const Pricing = () => {
                 href={STRIPE_CHECKOUT_URL}
                 className="w-full"
               />
+              
+              {/* Microcopy: Security & Receipt */}
+              <div className="mt-4 space-y-2">
+                <p className="flex items-center justify-center gap-1.5 text-xs text-text-tertiary">
+                  <Lock size={14} className="text-baum-500 flex-shrink-0" />
+                  <span>決済情報はStripeにより暗号化され、安全に処理されます</span>
+                </p>
+                <p className="flex items-center justify-center gap-1.5 text-xs text-text-tertiary">
+                  <Mail size={14} className="text-baum-500 flex-shrink-0" />
+                  <span>領収書は決済直後にメールで自動送付されます</span>
+                </p>
+              </div>
               
               {/* Payment & Legal Note */}
               <div className="mt-6 text-[10px] text-text-tertiary text-center space-y-2">
@@ -110,11 +127,12 @@ export const Pricing = () => {
                  </p>
                  <div className="border-t border-baum-100 pt-2 mt-2 text-left leading-relaxed text-text-light">
                     <p>※ ご登録のクレジットカードより毎月自動引き落としとなります。</p>
-                    <p>※ 成果を実感していただくため、<strong>最低6ヶ月間</strong>のご継続をお願いしております。7ヶ月目以降は会員サイトよりいつでも解約可能です。</p>
+                    <p>※ 当協会は、データを提供するだけではなく、<strong>3-6ヶ月間あなたに伴走し、PDCAを回しながら結果を出す</strong>ことを目指しています。成果を確実に出すため、<strong>最低6ヶ月間</strong>のご継続をお願いしております。7ヶ月目以降は会員サイトよりいつでも解約可能です。</p>
                  </div>
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>

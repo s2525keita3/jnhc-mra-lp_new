@@ -5,6 +5,7 @@ export { faqData } from './faq';
 export { heroData } from './hero';
 export { problemData } from './problems';
 export { closingData } from './closing';
+export { usageFlowData } from './usageFlow';
 
 
 

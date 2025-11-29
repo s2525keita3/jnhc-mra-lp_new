@@ -1,5 +1,5 @@
 // React / Library imports
-import React, { useMemo } from 'react';
+import { useMemo } from 'react';
 
 // Components
 import { RichCtaButton } from '@/components/ui/RichCtaButton';
@@ -25,13 +25,9 @@ export const Hero = () => {
           
           <h1 className="text-4xl md:text-6xl font-bold leading-[1.2] tracking-tight">
             {titleLines.map((line, i) => (
-              <React.Fragment key={i}>
-                {i === 0 ? (
-                  <span className="text-text-primary">{line}</span>
-                ) : (
-                  <span className="block mt-2 gradient-text">{line}</span>
-                )}
-              </React.Fragment>
+              <span key={i} className={i === 0 ? 'text-text-primary' : 'block mt-2 gradient-text'}>
+                {line}
+              </span>
             ))}
           </h1>
           

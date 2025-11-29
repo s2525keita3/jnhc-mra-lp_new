@@ -1,12 +1,12 @@
 // React / Library imports
 import { useMemo } from 'react';
-import { CheckCircle, Clock, ArrowRight } from 'lucide-react';
+import { CheckCircle, Clock, Zap, ShieldCheck, RefreshCw } from 'lucide-react';
 import { closingData } from '@/content';
 import { RichCtaButton } from '@/components/ui/RichCtaButton';
 import { STRIPE_CHECKOUT_URL } from '@/shared/constants';
 
 export const Closing = () => {
-  const { headline, message, cta, urgency } = useMemo(() => closingData, []);
+  const { headline, message, cta, urgency, benefits } = useMemo(() => closingData, []);
 
   return (
     <section className="py-24 bg-gradient-to-b from-bg-cream via-white to-bg-cream relative overflow-hidden">
@@ -49,27 +49,25 @@ export const Closing = () => {
                 
                 {/* Benefits list */}
                 <div className="grid md:grid-cols-3 gap-4 mt-6 pt-6 border-t border-baum-100">
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="text-green-500 shrink-0 mt-0.5" size={20} />
-                    <div className="text-left">
-                      <p className="text-sm font-bold text-text-primary">来週のセミナーから</p>
-                      <p className="text-xs text-text-tertiary">即活用可能</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="text-green-500 shrink-0 mt-0.5" size={20} />
-                    <div className="text-left">
-                      <p className="text-sm font-bold text-text-primary">30日間返金保証</p>
-                      <p className="text-xs text-text-tertiary">リスクゼロ</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="text-green-500 shrink-0 mt-0.5" size={20} />
-                    <div className="text-left">
-                      <p className="text-sm font-bold text-text-primary">いつでも解約可能</p>
-                      <p className="text-xs text-text-tertiary">違約金なし</p>
-                    </div>
-                  </div>
+                  {benefits.map((benefit, index) => {
+                    const IconComponent = 
+                      benefit.icon === 'Zap' ? Zap :
+                      benefit.icon === 'ShieldCheck' ? ShieldCheck :
+                      benefit.icon === 'RefreshCw' ? RefreshCw :
+                      CheckCircle;
+                    
+                    return (
+                      <div key={index} className="flex items-start gap-3 animate-fade-up" style={{ animationDelay: `${index * 0.1}s` }}>
+                        <div className="w-10 h-10 bg-baum-100 rounded-lg flex items-center justify-center shrink-0">
+                          <IconComponent className="text-baum-500" size={20} />
+                        </div>
+                        <div className="text-left flex-1">
+                          <p className="text-sm font-bold text-text-primary mb-1">{benefit.title}</p>
+                          <p className="text-xs text-text-tertiary leading-relaxed">{benefit.subtitle}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
 

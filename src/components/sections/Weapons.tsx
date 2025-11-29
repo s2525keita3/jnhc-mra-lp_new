@@ -1,6 +1,6 @@
 // React / Library imports
 import { useState, useMemo, useCallback } from 'react';
-import { PlayCircle, Download, ShieldCheck, FileText, Users, CheckCircle, Layers } from 'lucide-react';
+import { PlayCircle, Download, FileText, Users, Layers } from 'lucide-react';
 import { programData } from '@/content';
 
 export const Weapons = () => {

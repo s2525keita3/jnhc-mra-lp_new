@@ -53,7 +53,7 @@ export const Pricing = () => {
               {/* Bonuses - Updated */}
               <div className="bg-bg-orange-light p-5 rounded-xl border border-baum-100">
                 <p className="text-baum-500 font-bold text-sm mb-3 flex items-center">
-                  <span className="mr-1">🎁</span> 今だけの入会特典（7日間限定）
+                  <span className="mr-1">🎁</span> 入会特典
                 </p>
                 <div className="space-y-2">
                   {pricingData.bonuses.map((bonus, i) => (

@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import { STRIPE_CHECKOUT_URL } from '@/shared/constants';
 
 // Components
-import { RichCtaButton } from './RichCtaButton';
+import { RichCtaButton } from '@/shared/components/RichCtaButton';
 
 export const StickyCta = () => {
   const [isVisible, setIsVisible] = useState(false);

@@ -22,7 +22,7 @@ export const LegalDocuments = () => {
                             <div className="font-bold bg-slate-50 p-1">メールアドレス</div>
                             <div className="md:col-span-3 p-1">support@example.com</div>
                             <div className="font-bold bg-slate-50 p-1">販売価格</div>
-                            <div className="md:col-span-3 p-1">月額10,000円（税別）</div>
+                            <div className="md:col-span-3 p-1">月額11,000円（税込）</div>
                             <div className="font-bold bg-slate-50 p-1">商品代金以外の必要料金</div>
                             <div className="md:col-span-3 p-1">消費税、インターネット接続にかかる通信回線等の諸費用</div>
                             <div className="font-bold bg-slate-50 p-1">お支払い方法</div>
@@ -32,7 +32,7 @@ export const LegalDocuments = () => {
                             <div className="font-bold bg-slate-50 p-1">商品の引き渡し時期</div>
                             <div className="md:col-span-3 p-1">決済完了後、直ちにご利用いただけます。</div>
                             <div className="font-bold bg-slate-50 p-1">返品・交換・キャンセル</div>
-                            <div className="md:col-span-3 p-1">デジタルコンテンツの性質上、返品・返金はお受けしておりません。解約をご希望の場合は、最低契約期間（6ヶ月）満了後、会員ページよりお手続きください。次回決済日の前日までに手続きを完了することで、次月の請求は発生しません。</div>
+                            <div className="md:col-span-3 p-1">デジタルコンテンツの性質上、返品・返金はお受けしておりません。当協会は、3-6ヶ月間会員に伴走し、PDCAを回しながら結果を出すことを目指しているため、最低契約期間（6ヶ月）を設けております。解約をご希望の場合は、最低契約期間（6ヶ月）満了後、会員ページよりお手続きください。次回決済日の前日までに手続きを完了することで、次月の請求は発生しません。</div>
                         </div>
                     </div>
                 </details>
@@ -48,9 +48,9 @@ export const LegalDocuments = () => {
                         <p className="mb-2 font-bold">第2条（会員登録）</p>
                         <p className="mb-2">利用者は、本規約に同意の上、当協会所定の方法で入会を申し込み、当協会がこれを承認した時点で会員となります。</p>
                         <p className="mb-2 font-bold">第3条（利用料金および支払い）</p>
-                        <p className="mb-2">会員は、月額10,000円（税別）の利用料金を支払うものとします。支払いはクレジットカードによる自動決済のみとします。</p>
+                        <p className="mb-2">会員は、月額11,000円（税込）の利用料金を支払うものとします。支払いはクレジットカードによる自動決済のみとします。</p>
                         <p className="mb-2 font-bold">第4条（契約期間および解約）</p>
-                        <p className="mb-2">本サービスの最低契約期間は6ヶ月間とします。6ヶ月未満での中途解約は原則として認められません。7ヶ月目以降は、次回決済日の前日までに所定の手続きを行うことで解約が可能です。</p>
+                        <p className="mb-2">本サービスの最低契約期間は6ヶ月間とします。当協会は、単にデータを提供するだけではなく、3-6ヶ月間会員に伴走し、PDCAサイクルを回しながら確実に結果を出すことを目指しています。経営改善や採用定着など、成果を出すには一定の期間が必要なため、最低6ヶ月の継続をお願いしております。6ヶ月未満での中途解約は原則として認められません。7ヶ月目以降は、次回決済日の前日までに所定の手続きを行うことで解約が可能です。</p>
                         <p className="mb-2 font-bold">第5条（禁止事項）</p>
                         <p className="mb-2">会員は、本サービスのコンテンツを第三者に譲渡・貸与・転売・公衆送信してはなりません。ただし、同一法人内のスタッフ間での共有はこの限りではありません。</p>
                         <p className="mb-2 font-bold">第6条（免責事項）</p>
