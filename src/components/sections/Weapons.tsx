@@ -54,7 +54,7 @@ export const Weapons = () => {
                     </div>
                     <div>
                         <h3 className="font-bold text-2xl">01. 毎月2本のセミナー完全無料</h3>
-                        <p className="text-white/90 text-sm">採用セミナー（第2水曜）、営業セミナー（第4水曜）。全てアーカイブ視聴可。</p>
+                        <p className="text-white/90 text-sm">採用セミナー、営業セミナー。全てアーカイブ視聴可。</p>
                     </div>
                 </div>
             </div>
