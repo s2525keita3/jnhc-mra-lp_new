@@ -7,7 +7,7 @@ export const pricingData = {
   features: [
     "毎月開催！実践型セミナー（月2回・無料）",
     "50種以上のe-learning見放題",
-    "即効ツールBOX 30種 DLし放題",
+    "チラシテンプレート配布",
     "月1回オンライン交流会",
     "認定講師・ジョンからのアドバイス",
     "会員専用コミュニティ（Facebookページ、公式LINE）"
@@ -27,7 +27,7 @@ export const pricingData = {
         period: ""
       },
       {
-        name: "即効ツール30種",
+        name: "チラシテンプレート配布",
         value: 98000,
         period: ""
       },
@@ -51,7 +51,7 @@ export const pricingData = {
   bonuses: [
     {
       type: "PDF",
-      name: "AI活用スタートガイド"
+      name: "1億円店舗・多店舗展開のロードマップ"
     },
     {
       type: "Excel",

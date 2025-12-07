@@ -88,7 +88,7 @@ export const Pricing = () => {
                 <span className="text-5xl md:text-6xl font-bold tracking-tighter">{pricingData.monthlyPrice.toLocaleString()}</span>
                 <span className="text-xl font-bold mb-3 ml-1">円</span>
               </div>
-              <p className="text-xs text-text-tertiary mb-1">年払い: {pricingData.yearlyPrice.toLocaleString()}円（税別）</p>
+              <p className="text-xs text-text-tertiary mb-1">年払い希望の場合は、直接ご連絡ください。<br />※割引がございます。</p>
               <p className="text-xs text-text-light mb-6 line-through">通常コンサル 30万円〜</p>
               
               <RichCtaButton 

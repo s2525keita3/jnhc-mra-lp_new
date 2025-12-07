@@ -45,10 +45,17 @@ export const Hero = () => {
                     : 'bg-white border border-baum-100 shadow-card hover:shadow-card-hover hover-lift'
                 }`}
               >
-                <div className={`text-xl md:text-2xl font-bold ${stat.highlight ? 'text-white' : 'text-baum-500'}`}>
-                  {stat.value}{stat.unit && <span className="text-base md:text-lg ml-0.5">{stat.unit}</span>}
-                </div>
-                <div className={`text-[10px] md:text-xs mt-1 leading-tight ${stat.highlight ? 'text-white/90' : 'text-text-tertiary'}`}>
+                {stat.value && (
+                  <div className={`text-xl md:text-2xl font-bold ${stat.highlight ? 'text-white' : 'text-baum-500'}`}>
+                    {stat.value}{stat.unit && <span className="text-base md:text-lg ml-0.5">{stat.unit}</span>}
+                    {stat.valueSubtext && (
+                      <span className={`text-base md:text-lg ml-1 ${stat.highlight ? 'text-white' : 'text-baum-500'}`}>
+                        {stat.valueSubtext}
+                      </span>
+                    )}
+                  </div>
+                )}
+                <div className={`text-[10px] md:text-xs ${stat.value ? 'mt-1' : 'mt-0'} leading-tight ${stat.highlight ? 'text-white/90' : 'text-text-tertiary'}`}>
                   {stat.label}
                 </div>
               </div>

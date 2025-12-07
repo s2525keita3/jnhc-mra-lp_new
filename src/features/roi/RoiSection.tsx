@@ -49,7 +49,7 @@ export const RoiSection = () => {
                  <p className="text-sm text-text-secondary">月額: {comparison.ourAssociation.monthlyFee.toLocaleString()}円</p>
                  <p className="text-sm text-baum-500 font-bold">✓ セミナー完全無料</p>
                  <p className="text-sm text-baum-500 font-bold">✓ e-learning見放題</p>
-                 <p className="text-sm text-baum-500 font-bold">✓ ツール30種DLし放題</p>
+                 <p className="text-sm text-baum-500 font-bold">✓ チラシテンプレート配布</p>
                  <div className="pt-4 border-t border-baum-200">
                    <p className="text-xs text-text-tertiary mb-1">年間総額</p>
                    <p className="text-2xl font-bold text-baum-500">{comparison.ourAssociation.totalCost.toLocaleString()}円</p>

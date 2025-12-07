@@ -37,7 +37,7 @@ export const RoiSection = () => {
                  {comparison.competitor.elearningFee && comparison.competitor.elearningCount && (
                    <p className="text-sm text-text-secondary">e-learning: {comparison.competitor.elearningFee.toLocaleString()}円×{comparison.competitor.elearningCount}本</p>
                  )}
-                 <p className="text-sm text-text-secondary">ツール購入等</p>
+                 <p className="text-sm text-text-secondary">チラシテンプレート作成等</p>
                  <div className="pt-4 border-t border-slate-200">
                    <p className="text-xs text-text-tertiary mb-1">年間総額（試算）</p>
                    <p className="text-2xl font-bold text-red-500">約{comparison.competitor.totalCost.toLocaleString()}円</p>
@@ -50,7 +50,7 @@ export const RoiSection = () => {
                  <p className="text-sm text-text-secondary">月額: {comparison.ourAssociation.monthlyFee.toLocaleString()}円</p>
                  <p className="text-sm text-baum-500 font-bold">✓ セミナー完全無料</p>
                  <p className="text-sm text-baum-500 font-bold">✓ e-learning見放題</p>
-                 <p className="text-sm text-baum-500 font-bold">✓ ツール30種DLし放題</p>
+                 <p className="text-sm text-baum-500 font-bold">✓ チラシテンプレート配布</p>
                  <div className="pt-4 border-t border-baum-200">
                    <p className="text-xs text-text-tertiary mb-1">年間総額</p>
                    <p className="text-2xl font-bold text-baum-500">{comparison.ourAssociation.totalCost.toLocaleString()}円</p>
@@ -97,4 +97,8 @@ export const RoiSection = () => {
     </section>
   );
 };
+
+
+
+
 

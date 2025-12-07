@@ -26,7 +26,7 @@ export const programData = {
             themes: [
               "ケアマネ営業の基本",
               "切り返しトーク20選",
-              "MSW攻略",
+              "USPの作り方・考え方",
               "フォロー営業",
               "営業KPI設計"
             ]
@@ -45,7 +45,7 @@ export const programData = {
       id: 2,
       name: "50本以上のe-learning見放題",
       icon: "elearning",
-      description: "教育の質を『動画』で標準化。繰り返し教える時間を削減し、管理者は本来の業務に集中できます。5つのカテゴリ・体系的に学べる動画ライブラリ",
+      description: "教育の質を30本超の『動画』で標準化。繰り返し教える時間を削減し、管理者は本来の業務に集中できます。5つのカテゴリ・体系的に学べる動画。セミナー・交流会のアーカイブを合わせて現在50本以上！",
       details: {
         categories: [
           {
@@ -61,17 +61,17 @@ export const programData = {
           {
             name: "営業・集客",
             count: 12,
-            topics: ["ケアマネ営業", "MSW攻略", "デジタル営業"]
+            topics: ["ケアマネ営業", "USPの作り方・考え方", "営業の標準化"]
           },
           {
             name: "スタッフ教育",
             count: 8,
-            topics: ["新人教育", "医療安全", "多職種連携"]
+            topics: ["新人教育", "医療安全"]
           },
           {
             name: "制度・報酬",
             count: 8,
-            topics: ["報酬改定", "加算算定", "指示書の読み方"]
+            topics: ["報酬改定"]
           }
         ],
         archive: {
@@ -89,40 +89,30 @@ export const programData = {
     },
     {
       id: 3,
-      name: "即効ツールBOX 30種",
+      name: "チラシテンプレート配布",
       icon: "tools",
-      description: "成果実証済みの『完成品』を使うのが最短ルート。ゼロから作る時間を、利用者様のための時間に変えましょう。Excel/Word/Canvaで提供、即日運用可能。",
+      description: "営業活動に必要なチラシテンプレートを配布。ゼロから作る時間を、利用者様のための時間に変えましょう。即日運用可能。",
       details: {
         tools: [
           {
-            category: "経営管理ツール",
+            category: "営業用チラシ",
             count: 5,
-            examples: ["稼働率シミュレーター", "月次レポート自動生成"]
+            examples: ["自己紹介", "事例紹介"]
           },
           {
-            category: "採用・定着ツール",
+            category: "営業用チラシ",
             count: 6,
-            examples: ["面接チェックシート", "求人票テンプレート"]
+            examples: ["コラムテンプレート"]
           },
           {
-            category: "営業・集客ツール",
+            category: "その他営業資料",
             count: 6,
-            examples: ["トークスクリプト", "パンフレットテンプレート"]
-          },
-          {
-            category: "リスク管理ツール",
-            count: 4,
-            examples: ["クレーム対応フロー", "インシデント報告書"]
-          },
-          {
-            category: "その他実務ツール",
-            count: 9,
-            examples: []
+            examples: ["パンフレット", "コラム"]
           }
         ],
-        formats: ["Excel", "Word", "Canva"],
+        formats: ["PDF", "印刷データ"],
         externalValue: 98000,
-        externalDescription: "実務で使えるテンプレート群"
+        externalDescription: "営業活動に必要なチラシテンプレート一式"
       }
     },
     {
@@ -166,7 +156,7 @@ export const programData = {
         ],
         community: {
           platforms: ["Facebookページ", "公式LINE"],
-          features: ["24時間質問投稿OK", "情報交換"]
+          features: ["質問箱へ投函すれば回答が返ります", "情報交換"]
         },
         externalValue: 60000,
         externalDescription: "60,000円/年相当"

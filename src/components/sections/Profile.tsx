@@ -10,6 +10,7 @@ export const Profile = () => {
                   src="/teacher_john.JPG" 
                   alt="代表理事 渋谷慶太" 
                   className="w-full h-full object-cover absolute inset-0"
+                  style={{ objectPosition: 'center 30%' }}
                   loading="lazy"
                 />
                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6 text-white md:hidden">
@@ -41,7 +42,7 @@ export const Profile = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-3 gap-4 mt-8 pt-8 border-t border-baum-100">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 pt-8 border-t border-baum-100">
                <div className="text-center">
                   <div className="text-2xl font-bold text-text-primary">50<span className="text-sm font-normal">社+</span></div>
                   <div className="text-xs text-text-tertiary">支援実績</div>
@@ -54,6 +55,10 @@ export const Profile = () => {
                   <div className="text-2xl font-bold text-text-primary">5<span className="text-sm font-normal">億</span></div>
                   <div className="text-xs text-text-tertiary">年商規模</div>
                </div>
+               <div className="text-center border-l border-baum-100">
+                  <div className="text-2xl font-bold text-text-primary">5<span className="text-sm font-normal">店舗</span></div>
+                  <div className="text-xs text-text-tertiary">展開</div>
+               </div>
             </div>
           </div>
         </div>
@@ -61,4 +66,8 @@ export const Profile = () => {
     </section>
   );
 };
+
+
+
+
 

@@ -69,7 +69,7 @@ export const Weapons = () => {
                         🎓 e-learning
                     </button>
                     <button onClick={() => handleTabChange('tools')} className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${activeTab === 'tools' ? 'gradient-cta text-white shadow-cta' : 'bg-slate-100 text-text-tertiary hover:bg-slate-200'}`}>
-                        🧰 ツールBOX
+                        📄 チラシテンプレート
                     </button>
                     <button onClick={() => handleTabChange('community')} className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${activeTab === 'community' ? 'gradient-cta text-white shadow-cta' : 'bg-slate-100 text-text-tertiary hover:bg-slate-200'}`}>
                         👥 交流会
@@ -150,7 +150,7 @@ export const Weapons = () => {
                 <div className="w-12 h-12 bg-baum-100 rounded-xl flex items-center justify-center text-baum-500 group-hover:scale-110 transition duration-300">
                     <Users size={24} />
                 </div>
-                <h3 className="font-bold text-xl text-text-primary">03. 即効ツールBOX 30種</h3>
+                <h3 className="font-bold text-xl text-text-primary">03. チラシテンプレート配布</h3>
             </div>
             <p className="text-sm text-text-tertiary mb-6 leading-relaxed">
                 {programData.weapons[2].description}
@@ -201,7 +201,7 @@ export const Weapons = () => {
                         <h3 className="font-bold text-2xl text-text-primary mb-2">04. 月1交流会＋コミュニティ</h3>
                         <p className="text-text-tertiary font-medium leading-relaxed">
                             月1回のオンライン交流会（60分）。<span className="bg-bg-orange-light px-1 font-bold text-text-primary">全国の経営者とつながる</span>、孤独解消、成功事例の共有。<br className="hidden md:block"/>
-                            会員専用コミュニティ（Facebookページ、公式LINE）で24時間質問投稿OK。<br className="hidden md:block"/>
+                            会員専用コミュニティ（Facebookページ、公式LINE）。質問箱へ投函すれば回答が返ります。<br className="hidden md:block"/>
                             綺麗な成功談だけでなく、生々しい現場の悩みや「ここだけの話」が飛び交います。
                         </p>
                     </div>

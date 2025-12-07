@@ -16,11 +16,11 @@ export const LegalDocuments = () => {
                             <div className="font-bold bg-slate-50 p-1">運営統括責任者</div>
                             <div className="md:col-span-3 p-1">渋谷 慶太</div>
                             <div className="font-bold bg-slate-50 p-1">所在地</div>
-                            <div className="md:col-span-3 p-1">〒XXX-XXXX [住所記載箇所]</div>
+                            <div className="md:col-span-3 p-1">〒231-0064 神奈川県横浜市中区野毛町2-90桜木町スカイハイツ405</div>
                             <div className="font-bold bg-slate-50 p-1">電話番号</div>
-                            <div className="md:col-span-3 p-1">03-XXXX-XXXX（受付時間：平日10:00-18:00）</div>
+                            <div className="md:col-span-3 p-1">045-3451-0083（受付時間：平日09:00-18:00）</div>
                             <div className="font-bold bg-slate-50 p-1">メールアドレス</div>
-                            <div className="md:col-span-3 p-1">support@example.com</div>
+                            <div className="md:col-span-3 p-1">info@jnhc-mra.or.jp</div>
                             <div className="font-bold bg-slate-50 p-1">販売価格</div>
                             <div className="md:col-span-3 p-1">月額10,000円（税別）</div>
                             <div className="font-bold bg-slate-50 p-1">商品代金以外の必要料金</div>
@@ -83,6 +83,10 @@ export const LegalDocuments = () => {
         </section>
     )
 }
+
+
+
+
 
 
 

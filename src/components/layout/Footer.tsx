@@ -12,3 +12,7 @@ export const Footer = () => (
   </footer>
 );
 
+
+
+
+

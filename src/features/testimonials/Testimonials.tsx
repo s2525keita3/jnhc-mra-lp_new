@@ -18,7 +18,7 @@ export const Testimonials = () => {
             <div className="flex justify-between items-start mb-4">
               <div>
                 <p className="font-bold text-lg text-text-primary">T.K. 様</p>
-                <p className="text-xs font-bold text-baum-600 bg-bg-orange-light inline-block px-2 py-1 rounded mt-1">開業前 6ヶ月</p>
+                <p className="text-xs font-bold text-baum-600 bg-bg-orange-light inline-block px-2 py-1 rounded mt-1">開業前2ヵ月</p>
               </div>
               <div className="flex text-baum-400">
                 {[...Array(5)].map((_, i) => <Star key={i} size={14} fill="currentColor" />)}

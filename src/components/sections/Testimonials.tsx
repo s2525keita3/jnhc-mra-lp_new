@@ -5,7 +5,7 @@ import { Star } from 'lucide-react';
 const testimonialsDataStatic = [
   {
     name: "T.K. 様",
-    phase: "開業前 6ヶ月",
+    phase: "開業前2ヵ月",
     borderColorClass: "border-baum-500",
     phaseColorClass: "text-baum-600",
     text: "「初めての開業で何から手をつければいいか不安でしたが、<strong>『開業ロードマップ』と『融資資料テンプレ』</strong>のおかげで、スムーズに資金調達できました。最初から正しい型を知れたのは大きいです。」"

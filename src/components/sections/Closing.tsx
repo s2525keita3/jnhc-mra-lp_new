@@ -102,7 +102,7 @@ export const Closing = () => {
 
         {/* Additional reassurance */}
         <p className="text-center text-sm text-text-tertiary mt-8 animate-fade-up" style={{ animationDelay: '0.2s' }}>
-          400名以上の経営者が選んだ、実践的な経営支援プラットフォーム
+          50社以上支援した実践が詰まった経営支援プラットフォーム
         </p>
       </div>
     </section>

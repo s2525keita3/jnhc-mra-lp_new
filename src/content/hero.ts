@@ -10,7 +10,7 @@ export const heroData = {
     { value: "836", unit: "万円", label: "総額相当価値", highlight: true },
     { value: "月2回", unit: "", label: "セミナー完全無料" },
     { value: "50", unit: "本+", label: "e-learning見放題" },
-    { value: "30", unit: "種", label: "ツールDLし放題" }
+    { value: "1枚", unit: "", label: "チラシテンプレート配布", valueSubtext: "あたり1万円相当", highlight: false }
   ],
   specialOffers: []
 };
